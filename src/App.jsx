@@ -1,5 +1,6 @@
 import "./App.css";
-import Cat from "./Components/004/Cat";
+import Cat from "./Components/004/Cat.jsx";
+import randColor from "./Functions/randColor.js";
 
 const cats = [
   { id: 1, weight: 5, name: "Murka" },
@@ -27,6 +28,14 @@ function App() {
           <Cat catName="Garfildas" weight="12 kg." />
           <Cat catName="Bone" weight="15 kg." />
         </div> */}
+
+        <h1>
+          {[..."DINOZAURAS"].map((l, i) => (
+            <span key={i} style={{ color: randColor() }}>
+              {l}
+            </span>
+          ))}
+        </h1>
       </header>
     </div>
   );
