@@ -10,10 +10,10 @@ function Squares() {
     <>
       <div className="container">
         {square.map((_, i) => (
-          <div key={i}></div>
+          <div key={i}>{i + 1}</div>
         ))}
       </div>
-      <button onClick={add}>add []</button>
+      <button onClick={add}>add [ ]</button>
     </>
   );
 }
