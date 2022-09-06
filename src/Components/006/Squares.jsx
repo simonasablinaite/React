@@ -17,6 +17,7 @@ function Squares() {
   };
   return (
     <>
+      <h1>STATE {square.filter((square) => square.number < 300).length}</h1>
       <div className="container">
         {square.map((n, i) => (
           <div

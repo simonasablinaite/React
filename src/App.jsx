@@ -6,7 +6,6 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
-          <h1>STATE 2</h1>
           <Squares></Squares>
         </header>
       </div>
