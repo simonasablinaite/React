@@ -15,7 +15,13 @@ function Squares() {
     <>
       <div className="container">
         {square.map((n, i) => (
-          <div style={{ backgroundColor: n.color }} key={i}>
+          <div
+            style={{
+              backgroundColor: n.color,
+              borderRadius: n.number % 2 ? null : "50%",
+            }}
+            key={i}
+          >
             {n.number}
           </div>
         ))}
