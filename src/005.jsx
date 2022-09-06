@@ -7,10 +7,6 @@ function App() {
   const [count, setCount] = useState(1);
   const [ls, setLs] = useState("5px");
 
-  const doJob = () => {
-    console.log("Hello");
-  };
-
   const clicked = () => {
     setColor((color) => (color === "blue" ? "red" : "blue"));
   };

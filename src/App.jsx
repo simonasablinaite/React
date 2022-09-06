@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.scss";
 import Squares from "./Components/006/Squares";
 
