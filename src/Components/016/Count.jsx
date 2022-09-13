@@ -1,8 +1,9 @@
 import { useReducer } from "react";
 import { add1, rem1 } from "../../Actions/count";
+import count from "../../Reducers/count";
 
 function Count() {
-  const [counter, dispachCounter] = useReducer(Count, { number: 50 });
+  const [counter, dispachCounter] = useReducer(count, { number: 0 });
 
   return (
     <>

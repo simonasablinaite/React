@@ -7,7 +7,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h2>USE REDUCER</h2>
-          <Count></Count>
+          <Count />
         </header>
       </div>
     </>
