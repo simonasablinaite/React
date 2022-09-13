@@ -5,8 +5,6 @@ import count from "../../Reducers/count";
 function Count() {
   const [counter, dispachCounter] = useReducer(count, { number: 0 });
 
-  const [counter2, dispachCounter2] = useReducer(count, { number: 0 });
-
   return (
     <>
       <div className="container">
@@ -15,11 +13,8 @@ function Count() {
       <div>
         <button onClick={() => dispachCounter(add1())}>+1</button>
         <button onClick={() => dispachCounter(rem1())}>-1</button>
-      </div>
-      <h2>{counter2.number}</h2>
-      <div>
-        <button onClick={() => dispachCounter2(add2())}>+2</button>
-        <button onClick={() => dispachCounter2(rem2())}>-2</button>
+        <button onClick={() => dispachCounter(add2())}>+2</button>
+        <button onClick={() => dispachCounter(rem2())}>-2</button>
       </div>
     </>
   );
