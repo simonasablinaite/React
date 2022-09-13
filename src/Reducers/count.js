@@ -1,4 +1,4 @@
-import { ADD_ONE, REMOVE_ONE } from "../Constants/action";
+import { ADD_ONE, ADD_TWO, REMOVE_ONE, REMOVE_TWO } from "../Constants/action";
 
 function count(state, action) {
   let newState = { ...state };
@@ -13,6 +13,14 @@ function count(state, action) {
 
     case REMOVE_ONE:
       newState.number--;
+      break;
+
+    case ADD_TWO:
+      newState.number += 2;
+      break;
+
+    case REMOVE_TWO:
+      newState.number -= 2;
       break;
   }
 
