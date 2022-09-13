@@ -15,6 +15,15 @@ function Squares() {
   const sort = () => {
     setSquare((square) => [...square].sort((a, b) => b.number - a.number));
   };
+
+  const sort2 = () => {
+    setSquare((square) => [...square].sort((a, b) => a.number - b.number));
+  };
+
+  const black = () => {
+    setSquare((square) => [...square].filter(n.number < 300 ? n.number : null));
+  };
+
   return (
     <>
       <h1>STATE {square.filter((square) => square.number < 300).length}</h1>
@@ -31,8 +40,12 @@ function Squares() {
           </div>
         ))}
       </div>
-      <button onClick={add}>add [ ]</button>
-      <button onClick={sort}>Sort</button>
+      <div>
+        <button onClick={add}>add [ ]</button>
+        <button onClick={sort}>Sort</button>
+        <button onClick={sort2}>Sort2</button>
+        <button onClick={black}>only black</button>
+      </div>
     </>
   );
 }

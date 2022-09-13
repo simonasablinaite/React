@@ -1,13 +1,12 @@
 import "./App.scss";
-import Count from "./Components/016/Count";
+import Squares from "./Components/006/Squares";
 
 function App() {
   return (
     <>
       <div className="App">
         <header className="App-header">
-          <h2>USE REDUCER</h2>
-          <Count></Count>
+          <Squares></Squares>
         </header>
       </div>
     </>
