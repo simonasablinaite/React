@@ -21,7 +21,14 @@ function Count() {
   return (
     <>
       <div className="container">
-        <h2 style={{ color: counter.color }}>{counter.number}</h2>
+        <h2
+          style={{
+            color: counter.color,
+            fontSize: counter.fs,
+          }}
+        >
+          {counter.number}
+        </h2>
       </div>
       <div>
         <button onClick={() => dispachCounter(add1())}>+1</button>
