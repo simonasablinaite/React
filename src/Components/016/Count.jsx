@@ -3,6 +3,7 @@ import {
   add1,
   add2,
   add5,
+  border,
   changeSize,
   randClr,
   rem1,
@@ -16,6 +17,7 @@ function Count() {
     number: 0,
     color: "#E5FFCC",
     fs: "10px",
+    border: false,
   });
 
   return (
@@ -25,6 +27,7 @@ function Count() {
           style={{
             color: counter.color,
             fontSize: counter.fs,
+            border: counter.border ? "2px solid #F55F0F" : null,
           }}
         >
           {counter.number}
@@ -39,11 +42,12 @@ function Count() {
         <button onClick={() => dispachCounter(rem5())}>-5</button>
         <div>
           <button onClick={() => dispachCounter(randClr())}>
-            Change color
+            Change Color
           </button>
           <button onClick={() => dispachCounter(changeSize())}>
             Change size
           </button>
+          <button onClick={() => dispachCounter(border())}>Border</button>
         </div>
       </div>
     </>

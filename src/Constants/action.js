@@ -12,4 +12,6 @@ export const REMOVE_FIVE = "6";
 
 export const RANDOM_COLOR = "7";
 
-export const FONT_SIZE = "10";
+export const FONT_SIZE = "8";
+
+export const BORDER = "9";

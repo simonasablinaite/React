@@ -2,6 +2,7 @@ import {
   ADD_FIVE,
   ADD_ONE,
   ADD_TWO,
+  BORDER,
   FONT_SIZE,
   RANDOM_COLOR,
   REMOVE_FIVE,
@@ -54,5 +55,11 @@ export function randClr() {
 export function changeSize() {
   return {
     type: FONT_SIZE,
+  };
+}
+
+export function border() {
+  return {
+    type: BORDER,
   };
 }

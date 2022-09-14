@@ -2,6 +2,7 @@ import {
   ADD_FIVE,
   ADD_ONE,
   ADD_TWO,
+  BORDER,
   FONT_SIZE,
   RANDOM_COLOR,
   REMOVE_FIVE,
@@ -46,6 +47,9 @@ function count(state, action) {
       break;
     case FONT_SIZE:
       newState.fs = rand(10, 40) + "px";
+      break;
+    case BORDER:
+      newState.border = !newState.border;
       break;
   }
 
