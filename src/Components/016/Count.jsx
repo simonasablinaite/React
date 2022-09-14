@@ -3,6 +3,7 @@ import {
   add1,
   add2,
   add5,
+  changeSize,
   randClr,
   rem1,
   rem2,
@@ -14,6 +15,7 @@ function Count() {
   const [counter, dispachCounter] = useReducer(count, {
     number: 0,
     color: "#E5FFCC",
+    fs: "10px",
   });
 
   return (
@@ -31,6 +33,9 @@ function Count() {
         <div>
           <button onClick={() => dispachCounter(randClr())}>
             Change color
+          </button>
+          <button onClick={() => dispachCounter(changeSize())}>
+            Change size
           </button>
         </div>
       </div>

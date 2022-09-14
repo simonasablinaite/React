@@ -2,6 +2,7 @@ import {
   ADD_FIVE,
   ADD_ONE,
   ADD_TWO,
+  FONT_SIZE,
   RANDOM_COLOR,
   REMOVE_FIVE,
   REMOVE_ONE,
@@ -47,5 +48,11 @@ export function rem5() {
 export function randClr() {
   return {
     type: RANDOM_COLOR,
+  };
+}
+
+export function changeSize() {
+  return {
+    type: FONT_SIZE,
   };
 }
