@@ -15,3 +15,5 @@ export const RANDOM_COLOR = "7";
 export const FONT_SIZE = "8";
 
 export const BORDER = "9";
+
+export const ADD_SQ = "10";

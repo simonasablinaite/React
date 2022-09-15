@@ -3,6 +3,7 @@ import {
   add1,
   add2,
   add5,
+  addSq,
   border,
   changeSize,
   randClr,
@@ -11,6 +12,7 @@ import {
   rem5,
 } from "../../Actions/count";
 import count from "../../Reducers/count";
+import sq from "../../Reducers/squares";
 
 function Count() {
   const [counter, dispachCounter] = useReducer(count, {
@@ -19,6 +21,8 @@ function Count() {
     fs: "10px",
     border: false,
   });
+
+  const [squares, dispachSquares] = useReducer(sq, []);
 
   return (
     <>
@@ -40,6 +44,7 @@ function Count() {
         <button onClick={() => dispachCounter(rem2())}>-2</button>
         <button onClick={() => dispachCounter(add5())}>+5</button>
         <button onClick={() => dispachCounter(rem5())}>-5</button>
+
         <div>
           <button onClick={() => dispachCounter(randClr())}>
             Change Color
@@ -50,6 +55,13 @@ function Count() {
           <button onClick={() => dispachCounter(border())}>Border</button>
         </div>
       </div>
+
+      <div className="container">
+        {squares.map((_, i) => (
+          <div key={i}></div>
+        ))}
+      </div>
+      <button onClick={() => dispachSquares(addSq())}>Add Squares</button>
     </>
   );
 }

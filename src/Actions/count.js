@@ -1,6 +1,7 @@
 import {
   ADD_FIVE,
   ADD_ONE,
+  ADD_SQ,
   ADD_TWO,
   BORDER,
   FONT_SIZE,
@@ -61,5 +62,11 @@ export function changeSize() {
 export function border() {
   return {
     type: BORDER,
+  };
+}
+
+export function addSq() {
+  return {
+    type: ADD_SQ,
   };
 }
