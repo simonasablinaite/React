@@ -1,5 +1,5 @@
 import "./App.scss";
-import GetBooks from "./Components/019/GetBooks";
+import Color3 from "./Components/017/Color3";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h2>USE REDUCER</h2>
-          <GetBooks />
+          <Color3 />
         </header>
       </div>
     </>

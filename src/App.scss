@@ -65,6 +65,28 @@
   margin: 10px;
 }
 
+.kv {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: coral;
+  margin: 10px;
+  background-color: white;
+}
+
+.ap {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: coral;
+  margin: 10px;
+  border-radius: 50%;
+}
+
 button {
   align-items: center;
   background-clip: padding-box;
